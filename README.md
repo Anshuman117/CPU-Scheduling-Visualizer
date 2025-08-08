@@ -309,11 +309,12 @@ A: Yes, the interface is fully responsive and works on all devices.
 
 ### Installation
 
-*Clone the repo*
+**Clone the repo**
 
 ⁠```bash
-git clone https://github.com/Anshuman117/CPU-Scheduling-Visualizer
+git clone https://github.com/Anshuman117/CPU-Scheduling-Visualizer.git
 cd CPU-Scheduling-Visualizer
 npm install
-npm run dev
+npm run dev 
+
 ```
