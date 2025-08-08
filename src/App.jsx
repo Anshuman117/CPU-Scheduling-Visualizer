@@ -1108,7 +1108,7 @@ export default function CPUSchedulerHacker() {
                 <div className="pt-4 border-t border-gray-800">
                   <h5 className="text-xs font-bold text-gray-500 font-mono mb-2">TECH_STACK</h5>
                   <div className="flex flex-wrap gap-1">
-                    {['Next.js', 'React', 'Tailwind', 'Radix UI'].map((tech) => (
+                    {['React','Tailwind', 'JavaScript'].map((tech) => (
                       <span
                         key={tech}
                         className="px-2 py-1 bg-gray-800/50 text-gray-400 text-xs font-mono rounded border border-gray-700/50"
