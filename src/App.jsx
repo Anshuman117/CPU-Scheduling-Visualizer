@@ -21,7 +21,7 @@ import {
   TooltipTrigger,
   TooltipContent
 } from "./components/ui"
-import { Play, Pause, RotateCcw, Plus, Trash2, Cpu, Clock, Zap, BarChart3, Terminal, Activity, Settings, Eye, EyeOff, Shuffle } from 'lucide-react'
+import { Play, Pause, RotateCcw, Plus, Trash2, Cpu, Clock, Zap, BarChart3, Terminal, Activity, Settings, Eye, EyeOff, Shuffle, Github, ExternalLink, Heart } from 'lucide-react'
 
 const ALGORITHM_OPTIONS = [
   { value: "fcfs", label: "FCFS", fullName: "First Come First Serve" },
@@ -998,6 +998,156 @@ export default function CPUSchedulerHacker() {
             </div>
           </div>
         </div>
+
+        {/* Footer */}
+        <footer className="relative z-10 bg-gray-900/95 backdrop-blur-sm border-t border-cyan-500/30 mt-auto">
+          <div className="container mx-auto px-6 py-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {/* Project Info */}
+              <div className="space-y-4">
+                <div className="flex items-center gap-2">
+                  <Cpu className="w-6 h-6 text-cyan-400" />
+                  <h3 className="text-lg font-bold text-cyan-400 font-mono">CPU_SCHEDULER</h3>
+                </div>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Interactive CPU scheduling algorithms visualizer with cyberpunk aesthetics. 
+                  Perfect for learning operating system concepts.
+                </p>
+                <div className="flex items-center gap-2 text-xs text-gray-500">
+                  <span>Made with</span>
+                  <Heart className="w-3 h-3 text-red-400 animate-pulse" />
+                  <span>by the CPU Scheduler Team</span>
+                </div>
+              </div>
+
+              {/* Algorithms */}
+              <div className="space-y-4">
+                <h4 className="text-sm font-bold text-green-400 font-mono uppercase tracking-wider">
+                  Algorithms
+                </h4>
+                <ul className="space-y-2 text-sm">
+                  {ALGORITHM_OPTIONS.map((algo) => (
+                    <li key={algo.value}>
+                      <button
+                        onClick={() => setAlgorithm(algo.value)}
+                        className="text-gray-400 hover:text-cyan-400 transition-colors font-mono text-xs"
+                      >
+                        {algo.label} - {algo.fullName}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Features */}
+              <div className="space-y-4">
+                <h4 className="text-sm font-bold text-purple-400 font-mono uppercase tracking-wider">
+                  Features
+                </h4>
+                <ul className="space-y-2 text-sm text-gray-400">
+                  <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                    <span className="text-xs font-mono">Real-time Visualization</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                    <span className="text-xs font-mono">Interactive Process Management</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                    <span className="text-xs font-mono">Performance Metrics</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                    <span className="text-xs font-mono">Keyboard Shortcuts</span>
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                    <span className="text-xs font-mono">Responsive Design</span>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Links & Info */}
+              <div className="space-y-4">
+                <h4 className="text-sm font-bold text-yellow-400 font-mono uppercase tracking-wider">
+                  Resources
+                </h4>
+                <div className="space-y-3">
+                  <a
+                    href="https://github.com/your-username/cpu-scheduler-visualizer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors text-xs font-mono"
+                  >
+                    <Github className="w-4 h-4" />
+                    <span>Source Code</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <a
+                    href="https://github.com/your-username/cpu-scheduler-visualizer/issues"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors text-xs font-mono"
+                  >
+                    <span>Report Issues</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <a
+                    href="https://github.com/your-username/cpu-scheduler-visualizer/wiki"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-gray-400 hover:text-cyan-400 transition-colors text-xs font-mono"
+                  >
+                    <span>Documentation</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
+
+                {/* Tech Stack */}
+                <div className="pt-4 border-t border-gray-800">
+                  <h5 className="text-xs font-bold text-gray-500 font-mono mb-2">TECH_STACK</h5>
+                  <div className="flex flex-wrap gap-1">
+                    {['Next.js', 'React', 'Tailwind', 'Radix UI'].map((tech) => (
+                      <span
+                        key={tech}
+                        className="px-2 py-1 bg-gray-800/50 text-gray-400 text-xs font-mono rounded border border-gray-700/50"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom Bar */}
+            <div className="mt-8 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="flex items-center gap-4 text-xs text-gray-500 font-mono">
+                <span>© 2024 CPU Scheduler Visualizer</span>
+                <span className="hidden md:inline">•</span>
+                <span>MIT License</span>
+                <span className="hidden md:inline">•</span>
+                <span>v1.0.0</span>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="flex items-center gap-2 text-xs text-gray-500 font-mono">
+                  <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                  <span>System Online</span>
+                </div>
+                <div className="text-xs text-gray-500 font-mono">
+                  Build: {new Date().toISOString().split('T')[0]}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Footer Matrix Effect */}
+          <div className="absolute inset-0 opacity-5 pointer-events-none">
+            <div className="matrix-bg"></div>
+          </div>
+        </footer>
 
         <style jsx global>{`
           @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
