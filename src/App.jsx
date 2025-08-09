@@ -925,7 +925,7 @@ export default function CPUSchedulerHacker() {
                   <div className="flex items-center gap-2">
                     <BarChart3 className="w-6 h-6 text-cyan-400" />
                     <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-                      CPU_SCHEDULER_VISUALIZER
+                     SCHEDVIEW-CPU SCHEDULER VISUALIZER
                     </h1>
                   </div>
                   <div className="flex items-center gap-2 text-sm">
