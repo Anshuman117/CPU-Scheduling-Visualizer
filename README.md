@@ -1,4 +1,4 @@
-# Welcome to SchedView-CPU-Scheduling-Visualizer
+# Welcome to SchedView — CPU Scheduling Visualizer
 
 
 ![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react)
