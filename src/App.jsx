@@ -924,9 +924,16 @@ export default function CPUSchedulerHacker() {
                 <div className="flex items-center gap-4">
                   <div className="flex items-center gap-2">
                     <BarChart3 className="w-6 h-6 text-cyan-400" />
-                    <h1 className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent whitespace-nowrap">
-  SCHEDVIEW - CPU SCHEDULER VISUALIZER
+                    <h1 className="text-xl font-bold whitespace-nowrap">
+  <span className="text-cyan-400 border-2 border-cyan-400 rounded-sm px-1 py-0.5">
+    SCHEDVIEW
+  </span>
+  <span className="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
+    {" - CPU SCHEDULER VISUALIZER"}
+  </span>
 </h1>
+
+
 
                   </div>
                   <div className="flex items-center gap-2 text-sm">
