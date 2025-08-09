@@ -5,7 +5,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38B2AC?style=for-the-badge&logo=tailwind-css)
 
-https://cpu-scheduling-visualizer-psi.vercel.app/
+https://schedview-cpu-scheduling-visualizer-psi.vercel.app/
 **SchedView-CPU-Scheduling-Visualizer** is a web application that helps you understand CPU scheduling algorithms through interactive visualizations.  
 You can explore multiple scheduling algorithms, see how processes are executed in **real-time** with a histogram or Gantt chart, and view calculated performance metrics.
 
