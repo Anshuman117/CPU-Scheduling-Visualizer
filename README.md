@@ -1,12 +1,12 @@
-# Welcome to CPU Scheduling Visualizer!
+# Welcome to SchedView-CPU-Scheduling-Visualizer
+
 
 ![React](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-3.3-38B2AC?style=for-the-badge&logo=tailwind-css)
 
 https://cpu-scheduling-visualizer-psi.vercel.app/
-
-**CPU Scheduling Visualizer** is a web application that helps you understand CPU scheduling algorithms through interactive visualizations.  
+**SchedView-CPU-Scheduling-Visualizer** is a web application that helps you understand CPU scheduling algorithms through interactive visualizations.  
 You can explore multiple scheduling algorithms, see how processes are executed in **real-time** with a histogram or Gantt chart, and view calculated performance metrics.
 
 ## The scheduling algorithms currently available are:
@@ -31,7 +31,7 @@ You can explore multiple scheduling algorithms, see how processes are executed i
 To run the project locally, install Node.js, clone the repository, install dependencies, and start the development server.
 
 ```console
-git clone https://github.com/Anshuman117/CPU-Scheduling-Visualizer
-cd CPU-Scheduling-Visualizer
+git clone https://github.com/Anshuman117/SchedView-CPU-Scheduling-Visualizer
+cd SchedView-CPU-Scheduling-Visualizer
 npm install
 npm run dev
