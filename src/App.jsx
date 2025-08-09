@@ -929,7 +929,7 @@ export default function CPUSchedulerHacker() {
     SCHEDVIEW
   </span>
   <span className="bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
-    {" - CPU SCHEDULER VISUALIZER"}
+    {" - CPU SCHEDULING VISUALIZER"}
   </span>
 </h1>
 
