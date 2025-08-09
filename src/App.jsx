@@ -1453,12 +1453,12 @@ export default function CPUSchedulerHacker() {
             <div className="mt-8 pt-6 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-4 text-xs text-gray-500 font-mono">
                 <span>© 2025 CPU Scheduler Visualizer</span>
-                <span className="hidden md:inline">•</span>
+                <span className="hidden md:inline"></span>
                 <span></span>
-                <span className="hidden md:inline">•</span>
+                <span className="hidden md:inline"></span>
                 <span></span>
               </div>
-
+                    
               <div className="flex items-center gap-4">
                 {/* Online/Offline Indicator */}
                 <div className="flex items-center gap-2 text-xs text-gray-500 font-mono">
